@@ -149,3 +149,89 @@ body {
    si v administraci vytvoříš kategorie/produkty, pošli mi
    znovu zdrojový kód té sekce a doplním přesné selektory.
    ========================================================= */
+
+/* =========================================================
+   PRODUKTOVÉ KARTY – sekce "Akční zboží" / "Novinky" na homepage
+   (zjištěno ze skutečného zdrojového kódu, třídy .product/.p)
+   ========================================================= */
+
+.homepage-group-title {
+  font-family: var(--font-body);
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-dark) !important;
+  border: none !important;
+  margin: 32px 0 16px !important;
+}
+
+.products.products-block {
+  background: var(--color-bg-light);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.product .p {
+  background: var(--color-bg-white) !important;
+  border: 1px solid #e3e0d6 !important;
+  border-radius: 10px !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.product .p:hover {
+  transform: translateY(-2px);
+}
+
+.product .image img {
+  border-radius: 8px 8px 0 0;
+}
+
+.product .flags .flag {
+  font-family: var(--font-body) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  border-radius: 4px !important;
+}
+
+.product .flag-tip {
+  background: var(--color-accent) !important;
+  color: var(--color-accent-ink) !important;
+}
+
+.product .flag-new {
+  background: var(--color-bg-dark) !important;
+  color: var(--color-text-light) !important;
+}
+
+.product .name a {
+  color: var(--color-text-dark) !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+}
+
+.product .price.price-final strong {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--color-text-dark);
+}
+
+.product .p-code {
+  font-family: var(--font-body);
+  font-size: 11px !important;
+  color: #888780 !important;
+  text-transform: uppercase;
+}
+
+.product .add-to-cart-button {
+  background: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
+  color: var(--color-accent-ink) !important;
+  font-weight: 600 !important;
+  border-radius: 6px !important;
+}
+
+.product .add-to-cart-button:hover {
+  background: var(--color-accent-soft) !important;
+}
